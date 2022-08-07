@@ -1,0 +1,65 @@
+OVERVIEW: 
+The fit.py python script and associated modules are intended
+to be used to obtain mathematical fits to radio astronomy data
+collected with the gr_radio astro suite of programs published through
+the West Virginia University Radio Instrumentation Laboratory (WVU-RAIL) as 
+part of the NSF-sponsoree DSPIRA program.  
+
+The fit.py script reads data from a ".kel" data file. It is most useful to
+import data formatted as intensity (kelvins) versus velocity (m/s), but you 
+may also import data formatted as intensity (kelvins) versus frequency (Hz).
+
+INSTALLATION:  
+Copy the fitting code into a folder on the user's file system.  
+Recommend labelling this folder "Fit."  
+
+Create a subfolder within "Fit" and label it "Data"  (case sensitive)
+This is where you will place the parameter and data (.kel) files
+
+Create a subfolder within "Fit" and label it "Examples"
+This is where you will copy the examples that are provided
+
+USAGE:  
+Place the data (".kel") and parameter (".txt") files into the DATA folder.
+Open the parameter file and update the name of the .kel file you wish to fit.
+Run all subsequent commands from a terminal window in the "Fit" directory.
+
+To see a plot of the data in the .kel file, type the command below:
+python plotkel.py
+
+Using the displayed plot, update the parameters file to enter approximate values
+for the center, coefficient (amplitude) and sigma (width) value for each peak.
+Up to three Guassians are allowed. Peaks do not need to be listed in A-B-C order 
+of increasing velocity (or frequency.)  Rather, the peaks should be listed in order 
+of decreasing prominence (Peak A should be the most prominent, C the least.)  
+Before you actually start your fit, you'll first want to see how your initial values
+compare to the actual data.  To do this, set all of the fitting flags to "0" 
+in the parameter file. Then enter the command:
+
+python fit.py
+
+The program will generate a plot that displays your initial values overlaid with the data.
+
+To enable fitting, set each flag to "1" for each feature you wish to fit.
+If your data only contains two peaks, you can eliminate the third peak (C) by setting its
+coefficient to "0" and its flags to "0"
+
+The program proceeds by optimizing the first peak in the user defined guess until 
+a least-sum of squares is obtained for this peak's center, coefficient and sigma values. 
+It then moves on to optimize the second peak, and then the third.  It then repeats
+the entire process until the overall sum is at a relative minimum. The nitty gritty of 
+calculating the sum of least squares it handled in the module "minimize.py"
+
+In addition to plotting the final function that is obtained, fit.py will write all
+output results to a ".dat" file (in the "Data" subdirectory) with the same prefix as the ".kel" file.  Note that
+the ".dat" file is re-written each time that fit.py is run.
+
+There are examples provided in the EXAMPLES folder for one, two and three peak fits.
+
+Note that there is an additional script called stripfile.py, which simply reads the
+.kel file and strips off the header information, as well as the first column in the file.
+As with the previous programs, stripfile.py must be run in the FIT (main) folder, and
+its output is written as a ".txt" file to the "DATA" folder.
+
+This program is meant for amateur use and is free for all users. The author does not
+guarantee that there are no errors.

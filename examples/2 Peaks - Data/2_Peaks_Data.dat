@@ -1,0 +1,29 @@
+2_Peaks_Data.kel
+Velocity_(m/s)
+Initial parameters: center, coefficient, sigma
+Peak A [-13000.0, 40.0, 5000.0]
+Peak B [-90000.0, 10.0, 10000.0]
+Peak C [-50000.0, 5.0, 70000.0]
+Flags: Peak A (x3), Peak B (x3), Peak C (x3)
+Flag A [1, 1, 1]
+Flag B [0, 1, 0]
+Flag C [1, 1, 1]
+Total Iterations 
+10
+Lower fit threshold, upper fit threshold, startline, endline 
+[-200000.0, 200000.0, 147, 954]
+Stepsize & Maximum Passes: Center (x2), Coefficient (x2), Sigma (x2)
+[1000.0, 100, 0.5, 100, 500.0, 100]
+Differences
+[99999, 7464]
+[99999, 7464, 2276]
+[99999, 7464, 2276, 1330]
+[99999, 7464, 2276, 1330, 1044]
+[99999, 7464, 2276, 1330, 1044, 940]
+[99999, 7464, 2276, 1330, 1044, 940, 888]
+[99999, 7464, 2276, 1330, 1044, 940, 888, 768]
+[99999, 7464, 2276, 1330, 1044, 940, 888, 768, 724]
+Final parameters
+Peak A [-14000.0, 41.0, 11500.0]
+Peak B [-90000.0, 6.5, 10000.0]
+Peak C [-48000.0, 9.5, 51000.0]

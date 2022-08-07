@@ -1,0 +1,25 @@
+1_Peak_Ideal.kel
+Velocity_(m/s)
+Initial parameters: center, coefficient, sigma
+Peak A [20000.0, 10.0, 2000.0]
+Peak B [100000.0, 0.0, 10000.0]
+Peak C [10000.0, 0.0, 2000.0]
+Flags: Peak A (x3), Peak B (x3), Peak C (x3)
+Flag A [1, 1, 1]
+Flag B [0, 0, 0]
+Flag C [0, 0, 0]
+Total Iterations 
+10
+Lower fit threshold, upper fit threshold, startline, endline 
+[-200000.0, 200000.0, 63, 1086]
+Stepsize & Maximum Passes: Center (x2), Coefficient (x2), Sigma (x2)
+[1000.0, 100, 0.5, 100, 500.0, 100]
+Differences
+[99999, 5350]
+[99999, 5350, 557]
+[99999, 5350, 557, 90]
+[99999, 5350, 557, 90, 76]
+Final parameters
+Peak A [75000.0, 25.5, 19500.0]
+Peak B [100000.0, 0.0, 10000.0]
+Peak C [10000.0, 0.0, 2000.0]
