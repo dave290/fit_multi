@@ -1,0 +1,28 @@
+21-05-21T213629.kel
+Velocity_(km/s)
+Initial parameters: center, coefficient, sigma
+Peak A [30.0, 15.0, 5.0]
+Peak B [20.0, 10.0, 4.0]
+Peak C [50.0, 5.0, 10.0]
+Peak D [50.0, 5.0, 10.0]
+Flags: Peak A (x3), Peak B (x3), Peak C (x3)
+Flag A [1, 1, 1]
+Flag B [1, 1, 1]
+Flag C [1, 1, 1]
+Flag D [1, 1, 1]
+Total Iterations 
+10
+Lower fit threshold, upper fit threshold, startline, endline 
+[-200.0, 200.0, 64, 871]
+Stepsize & Maximum Passes: Center (x2), Coefficient (x2), Sigma (x2)
+[0.1, 1000, 0.1, 1000, 0.1, 1000]
+Differences
+[99999, 264]
+[99999, 264, 156]
+[99999, 264, 156, 144]
+[99999, 264, 156, 144, 142]
+Final parameters
+Peak A [37.1000000000001, 16.90000000000001, 7.0999999999999925]
+Peak B [19.29999999999999, 11.999999999999993, 4.799999999999997]
+Peak C [73.09999999999968, 5.899999999999997, 19.00000000000002]
+Peak D [94.89999999999972, 4.600000000000001, 17.99999999999997]

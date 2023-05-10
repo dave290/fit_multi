@@ -1,0 +1,38 @@
+# Parameter file for fit_multi.py
+#
+File 21-05-21T213629.kel
+Coordinate Velocity_(km/s)
+Lowerfitthreshold -200
+Upperfitthreshold +200
+Iterations 10
+#
+S centerstepsize&maxsteps(km/s) 0.1  1000
+S coefficientstepsize&steps(Kelvins) 0.1 1000
+S sigmastepsize&steps(km/s) 0.1 1000
+#
+# Flags appear after parameters and should be set to either "0" or "1"
+# For initial guess, set all flags to "0"
+# For subsequent fitting, set flags to "1" for parameters you wish to fit
+# To remove a peak from your fit, set its flags and coefficient to "0"
+#
+# Peak A
+P center 30 1
+P coef 15 1
+P sigma 5 1
+#
+# Peak B
+P center 20 1
+P coef 10 1
+P sigma 4 1
+#
+# Peak C
+P center 50 1
+P coef 5 1
+P sigma 10 1
+#
+# Peak D
+P center 90 1
+P coef 5 1
+P sigma 20 1
+#
+# End of parameters. Do not hit return at the end of this line!
